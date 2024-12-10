@@ -15,10 +15,8 @@ public class TC003_OneWayTrip extends ProjectSpecifiedMethod{
 
 	@BeforeTest
 	public void setup() throws IOException {
-	//	readFromPropFile("browser&URL");
-		
 		testName="OneWayTrip";
-		testDescription="Testing the login functionality with positive and negative cases";
+		testDescription="Testing the OneWayTrip";
 		testAuthor="Ramakrishnan";
 		testCategory="Smoke Testing";
 		
@@ -40,6 +38,7 @@ public class TC003_OneWayTrip extends ProjectSpecifiedMethod{
 		obj1.enter_firstName(firstName)
 		.enter_lastName(firstName)
 		.enter_contactDetail(contact)
-		.continue_Button()		.continue_Button1();
+		.continue_Button()	
+		.continue_Button1();
 	}
 }

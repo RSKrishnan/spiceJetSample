@@ -22,7 +22,7 @@ public class TC002_LoginPage extends ProjectSpecifiedMethod {
 		sheetName="LoginTestData";
 	}
 	
-	@Test(dataProvider="readData",groups = {"Regression"})
+	@Test(dataProvider="readData")
 	public void loginTest(String email,String password) throws IOException {	
 		
 		HomePage obj=new HomePage(driver);

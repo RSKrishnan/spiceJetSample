@@ -13,13 +13,13 @@ public class TC001_SignUp extends ProjectSpecifiedMethod {
 	@BeforeTest
 	public void setup() throws IOException {
 		testName="SignUpTest";
-		testDescription="Testing the login functionality with positive and negative cases";
+		testDescription="Testing the SignUp functionality";
 		testAuthor="Ramakrishnan";
 		testCategory="Smoke Testing";
 		sheetName="SignUpTestData";
 	}
 	
-	@Test(dataProvider="readData",groups = {"Regression"})
+	@Test(dataProvider="readData")
 	public void signUpTest(String title,String firstName,String lastName,String contact,String emailID,String newpass,String conf) {
 		
 		HomePage obj=new HomePage(driver);

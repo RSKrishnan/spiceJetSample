@@ -15,14 +15,14 @@ public class TC006_ManageBooking extends ProjectSpecifiedMethod {
 	//	readFromPropFile("browser&URL");
 		
 		testName="ManageBooking";
-		testDescription="Testing the login functionality with positive and negative cases";
+		testDescription="Testing the ManageBooking functionality";
 		testAuthor="Ramakrishnan";
 		testCategory="Smoke Testing";
 		
 		sheetName="ManageBookingTestData";
 	}
 	
-	@Test(dataProvider="readData", groups = {"Smoke"})
+	@Test(dataProvider="readData")
 	public void manageBooking(String ticket,String lastName) throws IOException, InterruptedException {
 		HomePage obj=new HomePage(driver);
 		obj.click_manageBooking()

@@ -45,8 +45,6 @@ public class HomePage extends ProjectSpecifiedMethod {
 	@FindBy(xpath="//*[text()='manage booking']")
 	WebElement manageBook;
 	
-	
-	
 	public HomePage(WebDriver driver) {
 
 		this.driver=driver;

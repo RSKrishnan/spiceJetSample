@@ -15,14 +15,14 @@ public class TC004_CheckIn extends ProjectSpecifiedMethod {
 	//	readFromPropFile("browser&URL");
 		
 		testName="checkIN";
-		testDescription="Testing the login functionality with positive and negative cases";
+		testDescription="Testing the CheckIn functionality";
 		testAuthor="Ramakrishnan";
 		testCategory="Smoke Testing";
 		
 		sheetName="checkINTestData";
 	}
 	
-	@Test(dataProvider="readData", groups = {"Smoke"})
+	@Test(dataProvider="readData")
 	public void checkIN(String ticket,String mailId) {
 		HomePage obj=new HomePage(driver);
 		obj.click_checkIn()

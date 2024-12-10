@@ -15,14 +15,14 @@ public class TC005_FlightStatus extends ProjectSpecifiedMethod{
 		//readFromPropFile("browser&URL");
 		
 		testName="FlightStatus";
-		testDescription="Testing the login functionality with positive and negative cases";
+		testDescription="Testing the FlightStatus functionality";
 		testAuthor="Ramakrishnan";
 		testCategory="Smoke Testing";
 		
 		sheetName="FlightStatusTestData";
 	}
 	
-	@Test(dataProvider="readData",groups = {"Smoke"})
+	@Test(dataProvider="readData")
 	public void flightStatus(String origin,String dest) throws IOException, InterruptedException {
 	HomePage obj=new HomePage(driver);
 	obj.click_flightStatus()

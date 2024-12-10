@@ -59,7 +59,7 @@ public class UtilityClass {
 	}
 
 	public void visibilityOfElement(WebElement els) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(els));
 	}
 
