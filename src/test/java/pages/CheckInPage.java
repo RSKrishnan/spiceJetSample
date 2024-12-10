@@ -12,7 +12,6 @@ import base.ProjectSpecifiedMethod;
 
 public class CheckInPage extends ProjectSpecifiedMethod{
 
-	
 	@FindBy(xpath="//input[@placeholder='e.g. W3X3H8']")
 	WebElement ticketNumber;
 	
@@ -24,24 +23,21 @@ public class CheckInPage extends ProjectSpecifiedMethod{
 	
 	@FindBy(xpath="//div[@class='css-76zvg2 r-1ttbpl1 r-1enofrn r-1bymd8e']")
 	WebElement msg;
-	
 	public CheckInPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-     public CheckInPage enter_ticketNumber() {
-		ticketNumber.sendKeys("1234567");
+     public CheckInPage enter_ticketNumber(String ticket) {
+		ticketNumber.sendKeys(ticket);
 		return this;
-
 	}
-     public CheckInPage enter_emailId() {
-    	 emailId.sendKeys("rama@example.com");
+     public CheckInPage enter_emailId(String mailid) {
+    	 emailId.sendKeys(mailid);
  		return this;
-
  	}
      public CheckInPage enter_searchBtn() {
     	 try {
-			takeScreenShot("1.Homepage.jpg");
+			takeScreenShot("4.CheckInPage.jpg");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

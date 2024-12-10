@@ -39,61 +39,69 @@ public class HomePage extends ProjectSpecifiedMethod {
 	@FindBy(xpath="//div[@class='css-76zvg2 r-cqee49 r-ubezar r-1ozqkpa'][normalize-space()='check-in']")
 	WebElement checkIn;
 	
+	@FindBy(xpath="//div[@class='css-76zvg2 r-cqee49 r-ubezar r-1ozqkpa'][normalize-space()='flight status']")
+	WebElement flightStatus;
+	
+	@FindBy(xpath="//*[text()='manage booking']")
+	WebElement manageBook;
+	
+	
+	
 	public HomePage(WebDriver driver) {
 
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-
 	public LoginPage click_login() throws IOException {
 		takeScreenShot("1.Homepage.jpg");
 		login.click();
 		return new LoginPage(driver);
-	}
-	
+	}	
 	public SignUpPage click_sign()
 	{
 		signUp.click();
-		return new SignUpPage(driver);
-		
+		return new SignUpPage(driver);		
 	}
-	
 	public void validate_login() {
 		String actual ="Hi Test";
 		String expected=account.getText();
 		Assert.assertEquals(actual, expected);
-	}
-	
+	}	
 	public HomePage enter_origin(String org) {
 		origin.sendKeys(org);
 		return this;
-	}
-	
+	}	
 	public HomePage enter_dest(String des) {
 		dest.sendKeys(des);
 		return this;
-	}
-	
+	}	
 	public HomePage select_date() {
 		date.click();
 		return this;
-	}
-	
+	}	
 	public HomePage search_Flight() {
 		searchFlight.click();
 		return this;
-	}
-	
+	}	
 	public BookingPage pricecontinue_Btn() {
 		priceContinueBtn.click();
 		return new BookingPage(driver);
-	}
-	
+	}	
 	public CheckInPage click_checkIn()
 	{
 		checkIn.click();
-		return new CheckInPage(driver);
-		
+		return new CheckInPage(driver);		
+	}	
+	public FlightStatusPage click_flightStatus()
+	{
+		flightStatus.click();
+		return new FlightStatusPage(driver);		
 	}
-
+	
+	public ManageBookingPage click_manageBooking()
+	{
+		manageBook.click();
+		return new ManageBookingPage(driver);		
+	}
+	
 }

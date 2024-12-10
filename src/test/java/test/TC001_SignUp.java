@@ -1,5 +1,8 @@
 package test;
 
+import java.io.IOException;
+
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import base.ProjectSpecifiedMethod;
@@ -7,19 +10,27 @@ import pages.HomePage;
 
 public class TC001_SignUp extends ProjectSpecifiedMethod {
 
-	@Test
-	public void signUpTest() {
+	@BeforeTest
+	public void setup() throws IOException {
+		testName="SignUpTest";
+		testDescription="Testing the login functionality with positive and negative cases";
+		testAuthor="Ramakrishnan";
+		testCategory="Smoke Testing";
+		sheetName="SignUpTestData";
+	}
+	
+	@Test(dataProvider="readData",groups = {"Regression"})
+	public void signUpTest(String title,String firstName,String lastName,String contact,String emailID,String newpass,String conf) {
 		
 		HomePage obj=new HomePage(driver);
 		obj.click_sign()
-		.enter_title("MR")
-		.enter_firstName("Ram")
-		.enter_lastName("test")
-		.enter_contact("9999999999")
-		.enter_emailId("testExample@example.com")
-		.enter_newPassword("TestExample@123")
-		.enter_confirmPassword("TestExample@123")
-		//need to scroll down
+		.enter_title(title)
+		.enter_firstName(firstName)
+		.enter_lastName(lastName)
+		.enter_contact(contact)
+		.enter_emailId(emailID)
+		.enter_newPassword(newpass)
+		.enter_confirmPassword(conf)
 		.enter_termsCondition()
 		.enter_submitBtn();
 	}
