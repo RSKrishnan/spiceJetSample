@@ -1,24 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="false">
+	<listeners>
+		<listener class-name="utils.ListnerClass"></listener>
+	</listeners>
 
-	<test name="Test2">
+<test name="headless-Chrome">
+ <parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="test.TC001_SignUp" />
+			<class name="test.TC002_LoginPage" />
+		</classes>
+	</test>
+
+
+	<test name="Edge Test">
+	 <parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="test.TC004_CheckIn" />
 			<class name="test.TC005_FlightStatus" />
 			<class name="test.TC006_ManageBooking" />
 		</classes>
 	</test>
-	<test name="Test1">
+
+<test name="Chrome Test">
+	<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="test.TC002_LoginPage" />
 			<class name="test.TC003_OneWayTrip" />
 		</classes>
 	</test>
-	<test name="Test3">
-		<classes>
-			<class name="test.TC001_SignUp" />
-			<class name="test.TC002_LoginPage" />
-		</classes>
-	</test>
+	
 </suite> <!-- Suite -->

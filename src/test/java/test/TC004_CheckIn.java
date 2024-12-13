@@ -12,18 +12,15 @@ public class TC004_CheckIn extends ProjectSpecifiedMethod {
 
 	@BeforeTest
 	public void setup() throws IOException {
-	//	readFromPropFile("browser&URL");
-		
-		testName="checkIN";
+		testName="checkIn";
 		testDescription="Testing the CheckIn functionality";
 		testAuthor="Ramakrishnan";
 		testCategory="Smoke Testing";
-		
 		sheetName="checkINTestData";
 	}
 	
 	@Test(dataProvider="readData")
-	public void checkIN(String ticket,String mailId) {
+	public void checkIN(String ticket,String mailId) throws IOException {
 		HomePage obj=new HomePage(driver);
 		obj.click_checkIn()
 		.enter_ticketNumber(ticket)

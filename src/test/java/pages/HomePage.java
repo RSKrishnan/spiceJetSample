@@ -45,13 +45,13 @@ public class HomePage extends ProjectSpecifiedMethod {
 	@FindBy(xpath="//*[text()='manage booking']")
 	WebElement manageBook;
 	
-	public HomePage(WebDriver driver) {
-
+	public HomePage(WebDriver driver) throws IOException {
+		takeScreenShot("1.Homepage");
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	public LoginPage click_login() throws IOException {
-		takeScreenShot("1.Homepage.jpg");
+		
 		login.click();
 		return new LoginPage(driver);
 	}	
@@ -60,10 +60,11 @@ public class HomePage extends ProjectSpecifiedMethod {
 		signUp.click();
 		return new SignUpPage(driver);		
 	}
-	public void validate_login() {
+	public void validate_login() throws IOException {
 		String actual ="Hi Test";
 		String expected=account.getText();
 		Assert.assertEquals(actual, expected);
+		takeScreenShot("2.LoginPage");
 	}	
 	public HomePage enter_origin(String org) {
 		origin.sendKeys(org);
@@ -81,7 +82,8 @@ public class HomePage extends ProjectSpecifiedMethod {
 		searchFlight.click();
 		return this;
 	}	
-	public BookingPage pricecontinue_Btn() {
+	public BookingPage pricecontinue_Btn() throws IOException {
+		takeScreenShot("2.OneWayBooking");
 		priceContinueBtn.click();
 		return new BookingPage(driver);
 	}	

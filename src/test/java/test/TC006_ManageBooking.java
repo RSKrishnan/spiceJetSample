@@ -12,8 +12,7 @@ public class TC006_ManageBooking extends ProjectSpecifiedMethod {
 
 	@BeforeTest
 	public void setup() throws IOException {
-	//	readFromPropFile("browser&URL");
-		
+	//	browserLaunch();		
 		testName="ManageBooking";
 		testDescription="Testing the ManageBooking functionality";
 		testAuthor="Ramakrishnan";

@@ -2,6 +2,7 @@ package test;
 
 import java.io.IOException;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -12,8 +13,6 @@ public class TC005_FlightStatus extends ProjectSpecifiedMethod{
 
 	@BeforeTest
 	public void setup() throws IOException {
-		//readFromPropFile("browser&URL");
-		
 		testName="FlightStatus";
 		testDescription="Testing the FlightStatus functionality";
 		testAuthor="Ramakrishnan";
@@ -32,4 +31,6 @@ public class TC005_FlightStatus extends ProjectSpecifiedMethod{
 	.validate_FlightStatus()
 	.click_home();
 	}
+	
+
 }

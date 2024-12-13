@@ -43,7 +43,7 @@ public class FlightStatusPage extends ProjectSpecifiedMethod {
 	}
 
 	public FlightStatusPage enter_searchBtn1() throws IOException {
-		takeScreenShot("5.1.FlightStatus.jpg");
+		takeScreenShot("5.1.FlightStatus");
 		if (searchBtn.isEnabled())
 			searchBtn.click();
 		else
@@ -54,11 +54,11 @@ public class FlightStatusPage extends ProjectSpecifiedMethod {
 		String expected = "Flight Status:";
 		String actual = status.getText();
 		visibilityOfElement(status);
-		takeScreenShot("5.2.FlightStatus.jpg");
+		takeScreenShot("5.2.FlightStatus");
 		Assert.assertEquals(actual, expected);
 		return this;
 	}
-	public HomePage click_home() {
+	public HomePage click_home() throws IOException {
 		home.click();
 		return new HomePage(driver);
 	}

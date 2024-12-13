@@ -40,7 +40,7 @@ public class ManageBookingPage extends ProjectSpecifiedMethod {
 	}
 	//need to use explict wait 
 	public ManageBookingPage enter_searchBooking() throws IOException, InterruptedException {
-		takeScreenShot("6.ManageBooking.jpg");
+		takeScreenShot("6.ManageBooking");
 		srBook.click();
 		visibilityOfElement(invalidText);
 		return this;

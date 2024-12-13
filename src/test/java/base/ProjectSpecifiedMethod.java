@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -24,7 +25,6 @@ public class ProjectSpecifiedMethod extends UtilityClass{
 		extent = new ExtentReports();
 		extent.attachReporter(reporter); 
 		readFromPropFile("browser&URL");
-		browserLaunch();
 	}
 	
 	@BeforeClass
@@ -34,19 +34,20 @@ public class ProjectSpecifiedMethod extends UtilityClass{
 		test.assignAuthor(testAuthor);
 	}
 	
-//	@BeforeMethod
-//	public void launchAndLoadURL() {
-//		browserLaunch();
-//	}
-//	@AfterMethod
-//	public void closebrowser() {
-//		browser_Close();
-//	}
+	@AfterMethod
+	public void closebrowser() {
+		browser_Close();
+	}
+	
+	@Parameters({"browser"})
+	@BeforeMethod
+	public void launchAndLoadURL(String browser) {	
+		browserLaunch(browser);		
+	}
 	
 	@AfterSuite
 	public void Close() {
 		extent.flush();
-		browser_Close();
 	}
 	
 	@DataProvider(name="readData")

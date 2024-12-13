@@ -15,16 +15,15 @@ public class TC003_OneWayTrip extends ProjectSpecifiedMethod{
 
 	@BeforeTest
 	public void setup() throws IOException {
-		testName="OneWayTrip";
+		testName="OnewayTrip";
 		testDescription="Testing the OneWayTrip";
 		testAuthor="Ramakrishnan";
 		testCategory="Smoke Testing";
-		
 		sheetName="OneWayTestData";
 	}
 	
 	@Test(dataProvider="readData")
-	public void oneWayTest(String origin,String dest,String firstName,String lastName,String contact) throws IOException {
+	public void oneWayTest(String origin,String dest,String email,String password) throws IOException {
 	
 		
 		HomePage obj=new HomePage(driver);
@@ -34,11 +33,17 @@ public class TC003_OneWayTrip extends ProjectSpecifiedMethod{
 		.search_Flight()
 		.pricecontinue_Btn();
 		
-		BookingPage obj1=new BookingPage(driver);
-		obj1.enter_firstName(firstName)
-		.enter_lastName(firstName)
-		.enter_contactDetail(contact)
-		.continue_Button()	
-		.continue_Button1();
+		obj.click_login() //home page
+		.enter_username(email)//login page
+		.enter_password(password) //login page
+		.login_button() //login page
+		.validate_login();
+		
+//		BookingPage obj1=new BookingPage(driver);
+//		obj1.enter_firstName(firstName)
+//		.enter_lastName(firstName)
+//		.enter_contactDetail(contact)
+//		.continue_Button()	
+//		.continue_Button1();
 	}
 }

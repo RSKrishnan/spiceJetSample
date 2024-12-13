@@ -12,13 +12,11 @@ public class TC002_LoginPage extends ProjectSpecifiedMethod {
 
 	@BeforeTest
 	public void setup() throws IOException {
-		readFromPropFile("browser&URL");
 		
 		testName="LoginTest";
 		testDescription="Testing the login functionality with positive and negative cases";
 		testAuthor="Ramakrishnan";
-		testCategory="Smoke Testing";
-		
+		testCategory="Regression Testing";
 		sheetName="LoginTestData";
 	}
 	

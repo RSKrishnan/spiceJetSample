@@ -35,7 +35,7 @@ public class LoginPage extends ProjectSpecifiedMethod {
 		return this;
 	}
 	public HomePage login_button() throws IOException {
-		takeScreenShot("2.LoginPage.jpg");
+		
 		loginBtn.click();
 		if(loginBtn.isDisplayed())
 		{

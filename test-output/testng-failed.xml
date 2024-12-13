@@ -1,162 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test2">
-    <classes>
-      <class name="test.TC004_CheckIn"/>
-      <class name="test.TC005_FlightStatus"/>
-      <class name="test.TC006_ManageBooking"/>
-    </classes>
-  </test> <!-- Test2 -->
-  <test name="Test1">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="utils.ListnerClass"/>
+  </listeners>
+  <test name="Chrome Test">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="test.TC002_LoginPage"/>
       <class name="test.TC003_OneWayTrip"/>
     </classes>
-  </test> <!-- Test1 -->
-  <test name="Test3">
+  </test> <!-- Chrome Test -->
+  <test name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="test.TC001_SignUp"/>
-      <class name="test.TC002_LoginPage"/>
-    </classes>
-  </test> <!-- Test3 -->
-  <test name="Test2(failed)">
-    <classes>
-      <class name="test.TC001_SignUp">
-        <methods>
-          <include name="testDetails"/>
-          <include name="reportInitialization"/>
-          <include name="Close"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC001_SignUp -->
-      <class name="test.TC004_CheckIn">
-        <methods>
-          <include name="testDetails"/>
-          <include name="setup"/>
-          <include name="checkIN" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- test.TC004_CheckIn -->
-      <class name="test.TC006_ManageBooking">
-        <methods>
-          <include name="manageBooking" invocation-numbers="0"/>
-          <include name="testDetails"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC006_ManageBooking -->
-      <class name="test.TC002_LoginPage">
-        <methods>
-          <include name="testDetails"/>
-          <include name="testDetails"/>
-          <include name="setup"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC002_LoginPage -->
-      <class name="test.TC005_FlightStatus">
-        <methods>
-          <include name="testDetails"/>
-          <include name="setup"/>
-          <include name="flightStatus" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- test.TC005_FlightStatus -->
       <class name="test.TC003_OneWayTrip">
         <methods>
           <include name="testDetails"/>
+          <include name="closebrowser"/>
+          <include name="launchAndLoadURL"/>
           <include name="setup"/>
         </methods>
       </class> <!-- test.TC003_OneWayTrip -->
-    </classes>
-  </test> <!-- Test2(failed) -->
-  <test name="Test1(failed)">
-    <classes>
-      <class name="test.TC001_SignUp">
-        <methods>
-          <include name="testDetails"/>
-          <include name="reportInitialization"/>
-          <include name="Close"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC001_SignUp -->
-      <class name="test.TC004_CheckIn">
-        <methods>
-          <include name="testDetails"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC004_CheckIn -->
-      <class name="test.TC006_ManageBooking">
-        <methods>
-          <include name="testDetails"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC006_ManageBooking -->
       <class name="test.TC002_LoginPage">
         <methods>
           <include name="testDetails"/>
-          <include name="testDetails"/>
-          <include name="loginTest" invocation-numbers="0 1"/>
-          <include name="setup"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC002_LoginPage -->
-      <class name="test.TC005_FlightStatus">
-        <methods>
-          <include name="testDetails"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC005_FlightStatus -->
-      <class name="test.TC003_OneWayTrip">
-        <methods>
-          <include name="testDetails"/>
-          <include name="oneWayTest" invocation-numbers="0"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC003_OneWayTrip -->
-    </classes>
-  </test> <!-- Test1(failed) -->
-  <test name="Test3(failed)">
-    <classes>
-      <class name="test.TC001_SignUp">
-        <methods>
-          <include name="testDetails"/>
           <include name="reportInitialization"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="closebrowser"/>
           <include name="Close"/>
           <include name="setup"/>
-          <include name="signUpTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- test.TC001_SignUp -->
-      <class name="test.TC004_CheckIn">
-        <methods>
-          <include name="testDetails"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC004_CheckIn -->
-      <class name="test.TC006_ManageBooking">
-        <methods>
-          <include name="testDetails"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC006_ManageBooking -->
-      <class name="test.TC002_LoginPage">
-        <methods>
-          <include name="testDetails"/>
-          <include name="testDetails"/>
-          <include name="loginTest" invocation-numbers="0 1"/>
-          <include name="setup"/>
-          <include name="setup"/>
+          <include name="launchAndLoadURL"/>
         </methods>
       </class> <!-- test.TC002_LoginPage -->
-      <class name="test.TC005_FlightStatus">
-        <methods>
-          <include name="testDetails"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC005_FlightStatus -->
-      <class name="test.TC003_OneWayTrip">
-        <methods>
-          <include name="testDetails"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- test.TC003_OneWayTrip -->
     </classes>
-  </test> <!-- Test3(failed) -->
+  </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

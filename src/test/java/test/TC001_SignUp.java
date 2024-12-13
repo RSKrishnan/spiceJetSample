@@ -15,12 +15,12 @@ public class TC001_SignUp extends ProjectSpecifiedMethod {
 		testName="SignUpTest";
 		testDescription="Testing the SignUp functionality";
 		testAuthor="Ramakrishnan";
-		testCategory="Smoke Testing";
+		testCategory="Regression Testing";
 		sheetName="SignUpTestData";
 	}
 	
 	@Test(dataProvider="readData")
-	public void signUpTest(String title,String firstName,String lastName,String contact,String emailID,String newpass,String conf) {
+	public void signUpTest(String title,String firstName,String lastName,String contact,String emailID,String newpass,String conf) throws IOException {
 		
 		HomePage obj=new HomePage(driver);
 		obj.click_sign()

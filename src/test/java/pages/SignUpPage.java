@@ -1,5 +1,6 @@
 package pages;
 
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -89,7 +90,7 @@ public class SignUpPage extends ProjectSpecifiedMethod {
 		}
 		return this;
 	}	
-	public HomePage enter_submitBtn() {
+	public HomePage enter_submitBtn() throws IOException {
 		submitBtn.click();
 		driver.close();
 		return new HomePage(driver);
