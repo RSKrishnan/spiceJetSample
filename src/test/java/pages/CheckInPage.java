@@ -36,18 +36,14 @@ public class CheckInPage extends ProjectSpecifiedMethod{
  		return this;
  	}
      public CheckInPage enter_searchBtn() {
-    	 try {
-			takeScreenShot("4.CheckInPage");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
     	 searchBtn.click();
  		return this;
  	}
      
-     public void validate_Checkin() {
+     public void validate_Checkin() throws IOException {
     	  String actual=msg.getText();
-    		String expected ="Invalid PNR or Ticket Numbertgg";
+    		String expected ="Invalid PNR or Ticket Number";
+    		takeScreenShot("4.CheckInPage");
     	     Assert.assertEquals(actual, expected);
 	}
    

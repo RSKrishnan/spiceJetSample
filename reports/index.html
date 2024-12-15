@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">SpicyJet Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 12, 2024 10:19:47 PM</span></a>
+<a href="#"><span class="badge badge-primary">Dec 15, 2024 08:38:12 PM</span></a>
 </li>
 </ul>
 </div>
@@ -90,7 +90,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
 <ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">Ramakrishnan</a>
+<a class="dropdown-item" href="#">Ram</a><a class="dropdown-item" href="#">Ramakrishnan</a><a class="dropdown-item" href="#">Krishna</a>
 </ul>
 </li>
 <li class="dropdown">
@@ -103,13 +103,114 @@
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
         <li class="test-item"  status="fail" test-id="1"
-          author="Ramakrishnan"
+          author="Ram"
           tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">SignUpTest</p>
+            <p class="text-sm">
+              <span>8:38:13 PM</span> / <span>00:00:17:980</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">SignUpTest</h5>
+<span class='badge badge-success'>12.15.2024 8:38:13 PM</span>
+<span class='badge badge-danger'>12.15.2024 8:38:31 PM</span>
+<span class='badge badge-default'>00:00:17:980</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ram</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+<div class="m-t-10 m-l-5">Testing the SignUp functionality</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Automation\SpicyJetSample\Snap\signUpTest.png' src="C:\Automation\SpicyJetSample\Snap\signUpTest.png">
+    <div class="title">signUpTest</div>
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>8:38:30 PM</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.ElementClickInterceptedException: Element <input id="defaultCheck1" class="form-check-input mt-02" type="checkbox"> is not clickable at point (83,555) because another element <div class="fade modal show"> obscures it
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [92ed7d01-c7e5-4488-a1d6-94b3a1849eff, clickElement {id=2f407cfe-d9ad-4db0-ae96-7c855761d511}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 32428, moz:profile: C:\Users\Krishna\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (92ed7d01-c7e5-4488-a1d6-94b3a1849eff)] -> xpath: //input[@id='defaultCheck1']]
+Session ID: 92ed7d01-c7e5-4488-a1d6-94b3a1849eff
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at pages.SignUpPage.enter_termsCondition(SignUpPage.java:87)
+	at test.TC001_SignUp.signUpTest(TC001_SignUp.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author="Krishna"
+          tag="SmokeTesting"
           device="">
           <div class="test-detail">
             <p class="name">LoginTest</p>
             <p class="text-sm">
-              <span>10:19:47 PM</span> / <span>00:00:34:941</span>
+              <span>8:38:32 PM</span> / <span>00:00:30:601</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -118,15 +219,15 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">LoginTest</h5>
-<span class='badge badge-success'>12.12.2024 10:19:47 PM</span>
-<span class='badge badge-danger'>12.12.2024 10:20:22 PM</span>
-<span class='badge badge-default'>00:00:34:941</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-success'>12.15.2024 8:38:32 PM</span>
+<span class='badge badge-danger'>12.15.2024 8:39:02 PM</span>
+<span class='badge badge-default'>00:00:30:601</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
-<div class="m-t-15"><span class="badge badge-pill badge-default">Ramakrishnan</span>
-<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Krishna</span>
+<span class="badge badge-pill badge-default">SmokeTesting</span></div>
 <div class="m-t-10 m-l-5">Testing the login functionality with positive and negative cases</div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
@@ -139,17 +240,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>10:20:22 PM</td>
+        <td>8:39:02 PM</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Hi Test']"}
-  (Session info: chrome=131.0.6778.109)
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[normalize-space()='Hi Test']
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e465cf05453e6cfa5f6329469811148c, findElement {using=xpath, value=//div[normalize-space()='Hi Test']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Krishna\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55780}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55780/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e465cf05453e6cfa5f6329469811148c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ad58a7bb-7394-4a4e-a9ff-a4921888baa8, findElement {using=xpath, value=//div[normalize-space()='Hi Test']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10972, moz:profile: C:\Users\Krishna\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ad58a7bb-7394-4a4e-a9ff-a4921888baa8
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -167,8 +267,8 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy20.getText(Unknown Source)
-	at pages.HomePage.validate_login(HomePage.java:65)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at pages.HomePage.validate_login(HomePage.java:68)
 	at test.TC002_LoginPage.loginTest(TC002_LoginPage.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -203,14 +303,14 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
-          author="Ramakrishnan"
-          tag="SmokeTesting"
+        <li class="test-item"  status="pass" test-id="3"
+          author="Ram"
+          tag="RegressionTesting"
           device="">
           <div class="test-detail">
-            <p class="name">OneWayTrip</p>
+            <p class="name">OnewayTrip</p>
             <p class="text-sm">
-              <span>10:20:38 PM</span> / <span>00:00:00:000</span>
+              <span>8:39:20 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -218,17 +318,133 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">OneWayTrip</h5>
-<span class='badge badge-success'>12.12.2024 10:20:38 PM</span>
-<span class='badge badge-danger'>12.12.2024 10:20:38 PM</span>
+<h5 class="test-status text-pass">OnewayTrip</h5>
+<span class='badge badge-success'>12.15.2024 8:39:20 PM</span>
+<span class='badge badge-danger'>12.15.2024 8:39:20 PM</span>
 <span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ram</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+<div class="m-t-10 m-l-5">Testing the OneWayTrip</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author="Ramakrishnan"
+          tag="SmokeTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">RoundTrip</p>
+            <p class="text-sm">
+              <span>8:39:58 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">RoundTrip</h5>
+<span class='badge badge-success'>12.15.2024 8:39:58 PM</span>
+<span class='badge badge-danger'>12.15.2024 8:39:58 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 <div class="m-t-15"><span class="badge badge-pill badge-default">Ramakrishnan</span>
 <span class="badge badge-pill badge-default">SmokeTesting</span></div>
-<div class="m-t-10 m-l-5">Testing the OneWayTrip</div>
+<div class="m-t-10 m-l-5">Testing the RoundTrip</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author="Ramakrishnan"
+          tag="SmokeTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">checkIn</p>
+            <p class="text-sm">
+              <span>8:40:41 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">checkIn</h5>
+<span class='badge badge-success'>12.15.2024 8:40:41 PM</span>
+<span class='badge badge-danger'>12.15.2024 8:40:41 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ramakrishnan</span>
+<span class="badge badge-pill badge-default">SmokeTesting</span></div>
+<div class="m-t-10 m-l-5">Testing the CheckIn functionality</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author="Krishna"
+          tag="SmokeTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">FlightStatus</p>
+            <p class="text-sm">
+              <span>8:40:53 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FlightStatus</h5>
+<span class='badge badge-success'>12.15.2024 8:40:53 PM</span>
+<span class='badge badge-danger'>12.15.2024 8:40:53 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Krishna</span>
+<span class="badge badge-pill badge-default">SmokeTesting</span></div>
+<div class="m-t-10 m-l-5">Testing the FlightStatus functionality</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author="Ramakrishnan"
+          tag="SmokeTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">ManageBooking</p>
+            <p class="text-sm">
+              <span>8:41:06 PM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ManageBooking</h5>
+<span class='badge badge-success'>12.15.2024 8:41:06 PM</span>
+<span class='badge badge-danger'>12.15.2024 8:41:06 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ramakrishnan</span>
+<span class="badge badge-pill badge-default">SmokeTesting</span></div>
+<div class="m-t-10 m-l-5">Testing the ManageBooking functionality</div>
 </div>
 </div>          </div>
         </li>
@@ -245,10 +461,43 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:38:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>SignUpTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -273,9 +522,9 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:19:47 PM</td>
+<td>20:38:32 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>LoginTest</a>
+<a href="#" class="linked" test-id='2' id='2'>LoginTest</a>
 </td>
 </tr>
 </tbody>
@@ -301,14 +550,16 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
+<span class='badge log pass-bg'>1</span>
 <span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">RegressionTesting</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>RegressionTesting</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -322,9 +573,16 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:19:47 PM</td>
+<td>20:38:13 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>LoginTest</a>
+<a href="#" class="linked" test-id='1' id='1'>SignUpTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:39:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>OnewayTrip</a>
 </td>
 </tr>
 </tbody>
@@ -334,15 +592,17 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">SmokeTesting</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>SmokeTesting</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -353,11 +613,39 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 </tr>
 </thead>
 <tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:38:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>LoginTest</a>
+</td>
+</tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:20:38 PM</td>
+<td>20:39:58 PM</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>OneWayTrip</a>
+<a href="#" class="linked" test-id='4' id='4'>RoundTrip</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:40:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>checkIn</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:40:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>FlightStatus</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:41:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>ManageBooking</a>
 </td>
 </tr>
 </tbody>
@@ -376,7 +664,7 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -386,12 +674,12 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <span class='badge log pass-bg'>1</span>
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">Ramakrishnan</p>
+<p class="name">Ram</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>Ramakrishnan</h4>
+<h4>Ram</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
@@ -406,16 +694,105 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>22:19:47 PM</td>
+<td>20:38:13 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>LoginTest</a>
+<a href="#" class="linked" test-id='1' id='1'>SignUpTest</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:20:38 PM</td>
+<td>20:39:20 PM</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>OneWayTrip</a>
+<a href="#" class="linked" test-id='3' id='3'>OnewayTrip</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">Ramakrishnan</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Ramakrishnan</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:39:58 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>RoundTrip</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:40:41 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>checkIn</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:41:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>ManageBooking</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">Krishna</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Krishna</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:38:32 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>LoginTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>20:40:53 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>FlightStatus</a>
 </td>
 </tr>
 </tbody>
@@ -435,25 +812,25 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 12, 2024 10:19:47 PM</h3>
+<h3>Dec 15, 2024 08:38:12 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 12, 2024 10:20:54 PM</h3>
+<h3>Dec 15, 2024 08:41:24 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>5</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -469,12 +846,12 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'>
-<b>1</b> tests passed
+<div><small data-tooltip='71%'>
+<b>5</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='50%'><b>1</b> tests failed,
+<small data-tooltip='28%'><b>2</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -494,7 +871,7 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 <div class="card-footer">
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> events failed,
+<small data-tooltip='100%'><b>2</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -511,7 +888,7 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 </div></div>
 <script>
 var timeline = {
-"LoginTest":34.941,"OneWayTrip":0
+"SignUpTest":17.98,"LoginTest":30.601,"OnewayTrip":0,"RoundTrip":0,"checkIn":0,"FlightStatus":0,"ManageBooking":0
 };
 </script>
 <div class="row">
@@ -522,7 +899,23 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
 <tbody>
 <tr>
+<td>Ram</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
 <td>Ramakrishnan</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Krishna</td>
 <td>1</td>
 <td>1</td>
 <td>0</td>
@@ -540,19 +933,19 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>RegressionTesting</td>
-<td>0</td>
+<td>1</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>50%</td>
 </tr>
 <tr>
 <td>SmokeTesting</td>
+<td>4</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>80%</td>
 </tr>
 </tbody>
 </table></div>
@@ -563,8 +956,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 1,
+passParent: 5,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -581,7 +974,7 @@ skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 passEvents: 0,
-failEvents: 1,
+failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

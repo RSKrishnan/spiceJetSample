@@ -14,7 +14,7 @@ public class TC001_SignUp extends ProjectSpecifiedMethod {
 	public void setup() throws IOException {
 		testName="SignUpTest";
 		testDescription="Testing the SignUp functionality";
-		testAuthor="Ramakrishnan";
+		testAuthor="Ram";
 		testCategory="Regression Testing";
 		sheetName="SignUpTestData";
 	}

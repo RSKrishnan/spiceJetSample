@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -105,6 +105,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.TC002_LoginPage" hash-for-method="loginTest(9967795789, TestExample@1235)">loginTest(9967795789, TestExample@1235)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.TC001_SignUp" hash-for-method="signUpTest(MR, Ram, test, 9999999999, testExample@example.com, TestExample@123, TestExample@123)">signUpTest(MR, Ram, test, 9999999999, testExample@example.com, TestExample@123, TestExample@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
@@ -116,12 +121,32 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.TC004_CheckIn" hash-for-method="checkIN(1234567, ram@exmaple.com)">checkIN(1234567, ram@exmaple.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.TC005_FlightStatus" hash-for-method="flightStatus(MAA, DEL)">flightStatus(MAA, DEL)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.TC002_LoginPage" hash-for-method="loginTest(9967795789, TestExample@1234)">loginTest(9967795789, TestExample@1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.TC003_OneWayTrip" hash-for-method="oneWayTest(MAA, DEL, test, example, 9876543456)">oneWayTest(MAA, DEL, test, example, 9876543456)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.TC006_ManageBooking" hash-for-method="manageBooking(1234567, ram)">manageBooking(1234567, ram)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.TC003_OneWayTrip" hash-for-method="oneWayTest(MAA, DEL, 9967795789, TestExample@1234)">oneWayTest(MAA, DEL, 9967795789, TestExample@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.TC007_RoundTrip" hash-for-method="roundTripTest(MAA, DEL, 9967795789, TestExample@1234)">roundTripTest(MAA, DEL, 9967795789, TestExample@1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -139,6 +164,45 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">test.TC001_SignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpTest(MR, Ram, test, 9999999999, testExample@example.com, TestExample@123, TestExample@123)">
+                  </a> <!-- signUpTest(MR, Ram, test, 9999999999, testExample@example.com, TestExample@123, TestExample@123) -->
+                  <span class="method-name">signUpTest</span>
+                  <span class="parameters">(MR, Ram, test, 9999999999, testExample@example.com, TestExample@123, TestExample@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;input id=&quot;defaultCheck1&quot; class=&quot;form-check-input mt-02&quot; type=&quot;checkbox&quot;&gt; is not clickable at point (83,555) because another element &lt;div class=&quot;fade modal show&quot;&gt; obscures it
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [92ed7d01-c7e5-4488-a1d6-94b3a1849eff, clickElement {id=2f407cfe-d9ad-4db0-ae96-7c855761d511}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 32428, moz:profile: C:\Users\Krishna\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (92ed7d01-c7e5-4488-a1d6-94b3a1849eff)] -&gt; xpath: //input[@id=&apos;defaultCheck1&apos;]]
+Session ID: 92ed7d01-c7e5-4488-a1d6-94b3a1849eff
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at pages.SignUpPage.enter_termsCondition(SignUpPage.java:87)
+	at test.TC001_SignUp.signUpTest(TC001_SignUp.java:34)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">test.TC002_LoginPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -148,15 +212,14 @@
                   </a> <!-- loginTest(9967795789, TestExample@1235) -->
                   <span class="method-name">loginTest</span>
                   <span class="parameters">(9967795789, TestExample@1235)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[normalize-space()=&apos;Hi Test&apos;]&quot;}
-  (Session info: chrome=131.0.6778.109)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[normalize-space()=&apos;Hi Test&apos;]
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e465cf05453e6cfa5f6329469811148c, findElement {using=xpath, value=//div[normalize-space()=&apos;Hi Test&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Krishna\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55780}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55780/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e465cf05453e6cfa5f6329469811148c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ad58a7bb-7394-4a4e-a9ff-a4921888baa8, findElement {using=xpath, value=//div[normalize-space()=&apos;Hi Test&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10972, moz:profile: C:\Users\Krishna\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ad58a7bb-7394-4a4e-a9ff-a4921888baa8
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -170,8 +233,8 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy20.getText(Unknown Source)
-	at pages.HomePage.validate_login(HomePage.java:65)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at pages.HomePage.validate_login(HomePage.java:68)
 	at test.TC002_LoginPage.loginTest(TC002_LoginPage.java:31)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
@@ -182,15 +245,47 @@ Session ID: e465cf05453e6cfa5f6329469811148c
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.TC003_OneWayTrip</span>
+              <span class="class-name">test.TC005_FlightStatus</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="oneWayTest(MAA, DEL, test, example, 9876543456)">
-                  </a> <!-- oneWayTest(MAA, DEL, test, example, 9876543456) -->
-                  <span class="method-name">oneWayTest</span>
-                  <span class="parameters">(MAA, DEL, test, example, 9876543456)</span>
+                  <a name="flightStatus(MAA, DEL)">
+                  </a> <!-- flightStatus(MAA, DEL) -->
+                  <span class="method-name">flightStatus</span>
+                  <span class="parameters">(MAA, DEL)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC004_CheckIn</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkIN(1234567, ram@exmaple.com)">
+                  </a> <!-- checkIN(1234567, ram@exmaple.com) -->
+                  <span class="method-name">checkIN</span>
+                  <span class="parameters">(1234567, ram@exmaple.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC007_RoundTrip</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="roundTripTest(MAA, DEL, 9967795789, TestExample@1234)">
+                  </a> <!-- roundTripTest(MAA, DEL, 9967795789, TestExample@1234) -->
+                  <span class="method-name">roundTripTest</span>
+                  <span class="parameters">(MAA, DEL, 9967795789, TestExample@1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -211,6 +306,38 @@ Session ID: e465cf05453e6cfa5f6329469811148c
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC003_OneWayTrip</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="oneWayTest(MAA, DEL, 9967795789, TestExample@1234)">
+                  </a> <!-- oneWayTest(MAA, DEL, 9967795789, TestExample@1234) -->
+                  <span class="method-name">oneWayTest</span>
+                  <span class="parameters">(MAA, DEL, 9967795789, TestExample@1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.TC006_ManageBooking</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="manageBooking(1234567, ram)">
+                  </a> <!-- manageBooking(1234567, ram) -->
+                  <span class="method-name">manageBooking</span>
+                  <span class="parameters">(1234567, ram)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -224,37 +351,33 @@ Session ID: e465cf05453e6cfa5f6329469811148c
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.ListnerClass&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Chrome Test&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test name=&quot;SignUp and login&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;FirefoxDriver&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;test.TC001_SignUp&quot;/&gt;
       &lt;class name=&quot;test.TC002_LoginPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignUp and login --&gt;
+  &lt;test name=&quot;One way Trip&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;incognito-Chrome&quot;/&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;test.TC003_OneWayTrip&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
-  &lt;test name=&quot;Chrome Test(failed)&quot;&gt;
+  &lt;/test&gt; &lt;!-- One way Trip --&gt;
+  &lt;test name=&quot;Round Trip&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.TC003_OneWayTrip&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testDetails&quot;/&gt;
-          &lt;include name=&quot;closebrowser&quot;/&gt;
-          &lt;include name=&quot;launchAndLoadURL&quot;/&gt;
-          &lt;include name=&quot;setup&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.TC003_OneWayTrip --&gt;
-      &lt;class name=&quot;test.TC002_LoginPage&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testDetails&quot;/&gt;
-          &lt;include name=&quot;reportInitialization&quot;/&gt;
-          &lt;include name=&quot;loginTest&quot; invocation-numbers=&quot;0&quot;/&gt;
-          &lt;include name=&quot;closebrowser&quot;/&gt;
-          &lt;include name=&quot;Close&quot;/&gt;
-          &lt;include name=&quot;setup&quot;/&gt;
-          &lt;include name=&quot;launchAndLoadURL&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.TC002_LoginPage --&gt;
+      &lt;class name=&quot;test.TC007_RoundTrip&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Chrome Test(failed) --&gt;
+  &lt;/test&gt; &lt;!-- Round Trip --&gt;
+  &lt;test name=&quot;Other modules&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.TC004_CheckIn&quot;/&gt;
+      &lt;class name=&quot;test.TC005_FlightStatus&quot;/&gt;
+      &lt;class name=&quot;test.TC006_ManageBooking&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Other modules --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -266,10 +389,16 @@ Session ID: e465cf05453e6cfa5f6329469811148c
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Chrome Test (2 classes)</span>
+                <span class="test-name">SignUp and login (2 classes)</span>
               </li>
               <li>
-                <span class="test-name">Chrome Test(failed) (2 classes)</span>
+                <span class="test-name">One way Trip (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Round Trip (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Other modules (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -295,24 +424,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'test.TC002_LoginPage')
-data.setCell(0, 3, 23758);
+data.setCell(0, 1, 'roundTripTest')
+data.setCell(0, 2, 'test.TC007_RoundTrip')
+data.setCell(0, 3, 35329);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'oneWayTest')
 data.setCell(1, 2, 'test.TC003_OneWayTrip')
-data.setCell(1, 3, 7868);
+data.setCell(1, 3, 29077);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginTest')
 data.setCell(2, 2, 'test.TC002_LoginPage')
-data.setCell(2, 3, 6472);
+data.setCell(2, 3, 21955);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'test.TC002_LoginPage')
+data.setCell(3, 3, 6400);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'flightStatus')
+data.setCell(4, 2, 'test.TC005_FlightStatus')
+data.setCell(4, 3, 4969);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkIN')
+data.setCell(5, 2, 'test.TC004_CheckIn')
+data.setCell(5, 3, 3153);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'manageBooking')
+data.setCell(6, 2, 'test.TC006_ManageBooking')
+data.setCell(6, 3, 2954);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'signUpTest')
+data.setCell(7, 2, 'test.TC001_SignUp')
+data.setCell(7, 3, 2813);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -327,11 +476,29 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">test.TC003_OneWayTrip</span>
+              <span class="ignored-class-name">test.TC005_FlightStatus</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportInitialization</span>
+                <br/>
+                <span class="ignored-method-name">Close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.TC002_LoginPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">reportInitialization</span>
+                <br/>
+                <span class="ignored-method-name">Close</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.TC006_ManageBooking</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">reportInitialization</span>
                 <br/>
@@ -347,80 +514,209 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.TC002_LoginPage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.TC004_CheckIn</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">reportInitialization</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC001_SignUp</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">309 ms</span>
+                <span class="method-start">210 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">test.TC003_OneWayTrip</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.TC002_LoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">309 ms</span>
+                <span class="method-start">210 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC001_SignUp</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">213 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAndLoadURL(FirefoxDriver)</span>
+                <span class="method-start">1185 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">signUpTest(MR, Ram, test, 9999999999, testExample@example.com, TestExample@123, TestExample@123)</span>
+                <span class="method-start">15191 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">18198 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TC002_LoginPage</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">testDetails</span>
-                <span class="method-start">312 ms</span>
+                <span class="method-start">19215 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">launchAndLoadURL(chrome)</span>
-                <span class="method-start">1265 ms</span>
+                <span class="method-name">launchAndLoadURL(FirefoxDriver)</span>
+                <span class="method-start">19299 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginTest(9967795789, TestExample@1235)</span>
-                <span class="method-start">10976 ms</span>
+                <span class="method-start">27510 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">35258 ms</span>
+                <span class="method-start">49816 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">launchAndLoadURL(chrome)</span>
-                <span class="method-start">36149 ms</span>
+                <span class="method-name">launchAndLoadURL(FirefoxDriver)</span>
+                <span class="method-start">50953 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(9967795789, TestExample@1234)</span>
-                <span class="method-start">43417 ms</span>
+                <span class="method-start">59797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">49890 ms</span>
+                <span class="method-start">66197 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.TC003_OneWayTrip</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">67243 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">testDetails</span>
-                <span class="method-start">51079 ms</span>
+                <span class="method-start">67244 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">launchAndLoadURL(chrome)</span>
-                <span class="method-start">51159 ms</span>
+                <span class="method-name">launchAndLoadURL(incognito-Chrome)</span>
+                <span class="method-start">67297 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">oneWayTest(MAA, DEL, test, example, 9876543456)</span>
-                <span class="method-start">58607 ms</span>
+                <span class="method-name">oneWayTest(MAA, DEL, 9967795789, TestExample@1234)</span>
+                <span class="method-start">76073 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">66477 ms</span>
+                <span class="method-start">105151 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">test.TC002_LoginPage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.TC007_RoundTrip</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">105956 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">105956 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAndLoadURL(chrome)</span>
+                <span class="method-start">106033 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">roundTripTest(MAA, DEL, 9967795789, TestExample@1234)</span>
+                <span class="method-start">112644 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">147974 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC004_CheckIn</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">148782 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC005_FlightStatus</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">148782 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC006_ManageBooking</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">148782 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC004_CheckIn</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">148783 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAndLoadURL(edge)</span>
+                <span class="method-start">148874 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkIN(1234567, ram@exmaple.com)</span>
+                <span class="method-start">156619 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">159772 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC005_FlightStatus</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">160593 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAndLoadURL(edge)</span>
+                <span class="method-start">160655 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">flightStatus(MAA, DEL)</span>
+                <span class="method-start">168119 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">173089 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC006_ManageBooking</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">testDetails</span>
+                <span class="method-start">173917 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">launchAndLoadURL(edge)</span>
+                <span class="method-start">174014 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">manageBooking(1234567, ram)</span>
+                <span class="method-start">188004 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">190959 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.TC004_CheckIn</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">Close</span>
-                <span class="method-start">67350 ms</span>
+                <span class="method-start">191862 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

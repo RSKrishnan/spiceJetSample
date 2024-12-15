@@ -1,20 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="browser" value="chrome"/>
+  <parameter name="browser" value="edge"/>
   <listeners>
     <listener class-name="utils.ListnerClass"/>
   </listeners>
-  <test name="Chrome Test">
-    <parameter name="browser" value="chrome"/>
+  <test name="SignUp and login">
+    <parameter name="browser" value="FirefoxDriver"/>
     <classes>
+      <class name="test.TC001_SignUp"/>
       <class name="test.TC002_LoginPage"/>
+    </classes>
+  </test> <!-- SignUp and login -->
+  <test name="One way Trip">
+    <parameter name="browser" value="incognito-Chrome"/>
+    <classes>
       <class name="test.TC003_OneWayTrip"/>
     </classes>
-  </test> <!-- Chrome Test -->
-  <test name="Chrome Test(failed)">
+  </test> <!-- One way Trip -->
+  <test name="Round Trip">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="test.TC007_RoundTrip"/>
+    </classes>
+  </test> <!-- Round Trip -->
+  <test name="Other modules">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="test.TC004_CheckIn"/>
+      <class name="test.TC005_FlightStatus"/>
+      <class name="test.TC006_ManageBooking"/>
+    </classes>
+  </test> <!-- Other modules -->
+  <test name="SignUp and login(failed)">
+    <parameter name="browser" value="FirefoxDriver"/>
+    <classes>
+      <class name="test.TC005_FlightStatus">
+        <methods>
+          <include name="testDetails"/>
+          <include name="closebrowser"/>
+          <include name="setup"/>
+          <include name="launchAndLoadURL"/>
+        </methods>
+      </class> <!-- test.TC005_FlightStatus -->
+      <class name="test.TC001_SignUp">
+        <methods>
+          <include name="testDetails"/>
+          <include name="closebrowser"/>
+          <include name="setup"/>
+          <include name="launchAndLoadURL"/>
+          <include name="signUpTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.TC001_SignUp -->
+      <class name="test.TC004_CheckIn">
+        <methods>
+          <include name="testDetails"/>
+          <include name="reportInitialization"/>
+          <include name="setup"/>
+          <include name="closebrowser"/>
+          <include name="Close"/>
+          <include name="launchAndLoadURL"/>
+        </methods>
+      </class> <!-- test.TC004_CheckIn -->
+      <class name="test.TC007_RoundTrip">
+        <methods>
+          <include name="testDetails"/>
+          <include name="setup"/>
+          <include name="closebrowser"/>
+          <include name="launchAndLoadURL"/>
+        </methods>
+      </class> <!-- test.TC007_RoundTrip -->
+      <class name="test.TC002_LoginPage">
+        <methods>
+          <include name="testDetails"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="closebrowser"/>
+          <include name="launchAndLoadURL"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.TC002_LoginPage -->
       <class name="test.TC003_OneWayTrip">
         <methods>
           <include name="testDetails"/>
@@ -23,17 +87,14 @@
           <include name="setup"/>
         </methods>
       </class> <!-- test.TC003_OneWayTrip -->
-      <class name="test.TC002_LoginPage">
+      <class name="test.TC006_ManageBooking">
         <methods>
           <include name="testDetails"/>
-          <include name="reportInitialization"/>
-          <include name="loginTest" invocation-numbers="0"/>
           <include name="closebrowser"/>
-          <include name="Close"/>
           <include name="setup"/>
           <include name="launchAndLoadURL"/>
         </methods>
-      </class> <!-- test.TC002_LoginPage -->
+      </class> <!-- test.TC006_ManageBooking -->
     </classes>
-  </test> <!-- Chrome Test(failed) -->
+  </test> <!-- SignUp and login(failed) -->
 </suite> <!-- Failed suite [Suite] -->

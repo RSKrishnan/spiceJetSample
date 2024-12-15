@@ -27,14 +27,14 @@ public class HomePage extends ProjectSpecifiedMethod {
 	@FindBy(xpath="//div[@data-testid='to-testID-destination']//input[@type='text']")
 	WebElement dest;
 	
-	@FindBy(css="div[class='css-1dbjc4n r-1euycsn'] div:nth-child(3) div:nth-child(1) div:nth-child(3) div:nth-child(3) div:nth-child(7) div:nth-child(1) div:nth-child(1)")
+	@FindBy(xpath="//body[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[2]/div[4]/div[1]/div[2]/div[2]/div[3]/div[2]/div[1]/div[3]/div[1]/div[3]/div[3]/div[4]/div[1]/div[1]")
 	WebElement date;
+	
+	@FindBy(xpath="//body[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[2]/div[4]/div[1]/div[2]/div[2]/div[3]/div[2]/div[1]/div[3]/div[1]/div[3]/div[3]/div[5]/div[1]")
+	WebElement returndate;
 	
 	@FindBy(xpath="//div[@class='css-1dbjc4n r-1awozwy r-z2wwpe r-1loqt21 r-18u37iz r-1777fci r-1g94qm0 r-1w50u8q r-ah5dr5 r-1otgn73']")
 	 WebElement searchFlight;
-	
-	@FindBy(xpath="//div[@class='css-1dbjc4n r-1awozwy r-1xfd6ze r-1loqt21 r-18u37iz r-1777fci r-1w50u8q r-ah5dr5 r-1otgn73']")
-	 WebElement priceContinueBtn;
 	
 	@FindBy(xpath="//div[@class='css-76zvg2 r-cqee49 r-ubezar r-1ozqkpa'][normalize-space()='check-in']")
 	WebElement checkIn;
@@ -44,6 +44,9 @@ public class HomePage extends ProjectSpecifiedMethod {
 	
 	@FindBy(xpath="//*[text()='manage booking']")
 	WebElement manageBook;
+	
+	@FindBy(xpath="//body/div[@id='react-root']/div[@id='main-container']/div[@class='css-1dbjc4n r-1niwhzg r-1jgb5lz r-r0h9e2 r-13qz1uu']/div[@class='css-1dbjc4n r-14lw9ot']/div[@class='css-1dbjc4n r-14lw9ot r-z2wwpe r-vgw6uq r-156q2ks r-11ict49 r-8uuktl r-136ojw6']/div[@class='css-1dbjc4n r-1pcd2l5 r-1uwte3a r-m611by r-bnwqim']/div[@class='css-1dbjc4n']/div[@class='css-1dbjc4n']/div[@class='css-1dbjc4n r-1d09ksm r-1inuy60 r-1qxgc49']/div[@class='css-1dbjc4n']/div[@class='css-1dbjc4n r-18u37iz r-1w6e6rj']/div[2]")
+	WebElement roundTrip;
 	
 	public HomePage(WebDriver driver) throws IOException {
 		takeScreenShot("1.Homepage");
@@ -78,15 +81,13 @@ public class HomePage extends ProjectSpecifiedMethod {
 		date.click();
 		return this;
 	}	
-	public HomePage search_Flight() {
+
+	public BookingPage search_Flight() throws IOException {
+		takeScreenShot("Booking flight");
 		searchFlight.click();
-		return this;
-	}	
-	public BookingPage pricecontinue_Btn() throws IOException {
-		takeScreenShot("2.OneWayBooking");
-		priceContinueBtn.click();
 		return new BookingPage(driver);
 	}	
+
 	public CheckInPage click_checkIn()
 	{
 		checkIn.click();
@@ -104,4 +105,12 @@ public class HomePage extends ProjectSpecifiedMethod {
 		return new ManageBookingPage(driver);		
 	}
 	
+	public HomePage click_roundTrip() {
+		roundTrip.click();
+		return this;
+	}
+	public HomePage select_returndate() {
+		returndate.click();
+		return this;
+	}
 }

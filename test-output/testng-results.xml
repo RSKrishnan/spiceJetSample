@@ -1,40 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="2" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="67021" started-at="2024-12-12T16:49:47Z" finished-at="2024-12-12T16:50:54Z">
+  <suite name="Suite" duration-ms="191617" started-at="2024-12-15T15:08:13Z" finished-at="2024-12-15T15:11:24Z">
     <groups>
     </groups>
-    <test name="Chrome Test" duration-ms="67021" started-at="2024-12-12T16:49:47Z" finished-at="2024-12-12T16:50:54Z">
+    <test name="SignUp and login" duration-ms="67010" started-at="2024-12-15T15:08:13Z" finished-at="2024-12-15T15:09:20Z">
       <class name="test.TC002_LoginPage">
-        <test-method status="PASS" signature="reportInitialization()[pri:0, instance:test.TC002_LoginPage@737996a0]" name="reportInitialization" is-config="true" duration-ms="308" started-at="2024-12-12T22:19:47Z" finished-at="2024-12-12T22:19:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- reportInitialization -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.TC003_OneWayTrip@61dc03ce]" name="setup" is-config="true" duration-ms="0" started-at="2024-12-12T22:19:47Z" finished-at="2024-12-12T22:19:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:test.TC002_LoginPage@737996a0]" name="setup" is-config="true" duration-ms="0" started-at="2024-12-12T22:19:47Z" finished-at="2024-12-12T22:19:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testDetails()[pri:0, instance:test.TC002_LoginPage@737996a0]" name="testDetails" is-config="true" duration-ms="66" started-at="2024-12-12T22:19:47Z" finished-at="2024-12-12T22:19:47Z">
+        <test-method status="PASS" signature="testDetails()[pri:0, instance:test.TC002_LoginPage@69d9c55]" name="testDetails" is-config="true" duration-ms="0" started-at="2024-12-15T20:38:32Z" finished-at="2024-12-15T20:38:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC002_LoginPage@737996a0]" name="launchAndLoadURL" is-config="true" duration-ms="9711" started-at="2024-12-12T22:19:48Z" finished-at="2024-12-12T22:19:58Z">
+        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC002_LoginPage@69d9c55]" name="launchAndLoadURL" is-config="true" duration-ms="8211" started-at="2024-12-15T20:38:32Z" finished-at="2024-12-15T20:38:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[FirefoxDriver]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAndLoadURL -->
-        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:test.TC002_LoginPage@737996a0]" name="loginTest" duration-ms="23758" started-at="2024-12-12T22:19:58Z" data-provider="readData" finished-at="2024-12-12T22:20:22Z">
+        <test-method status="FAIL" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:test.TC002_LoginPage@69d9c55]" name="loginTest" duration-ms="21955" started-at="2024-12-15T20:38:40Z" data-provider="readData" finished-at="2024-12-15T20:39:02Z">
           <params>
             <param index="0">
               <value>
@@ -49,26 +37,24 @@
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Hi Test']"}
-  (Session info: chrome=131.0.6778.109)
+              <![CDATA[Unable to locate element: //div[normalize-space()='Hi Test']
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e465cf05453e6cfa5f6329469811148c, findElement {using=xpath, value=//div[normalize-space()='Hi Test']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Krishna\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55780}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55780/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e465cf05453e6cfa5f6329469811148c]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ad58a7bb-7394-4a4e-a9ff-a4921888baa8, findElement {using=xpath, value=//div[normalize-space()='Hi Test']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10972, moz:profile: C:\Users\Krishna\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ad58a7bb-7394-4a4e-a9ff-a4921888baa8]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='Hi Test']"}
-  (Session info: chrome=131.0.6778.109)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[normalize-space()='Hi Test']
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e465cf05453e6cfa5f6329469811148c, findElement {using=xpath, value=//div[normalize-space()='Hi Test']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.109, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\Krishna\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55780}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55780/devtoo..., se:cdpVersion: 131.0.6778.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e465cf05453e6cfa5f6329469811148c
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ad58a7bb-7394-4a4e-a9ff-a4921888baa8, findElement {using=xpath, value=//div[normalize-space()='Hi Test']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10972, moz:profile: C:\Users\Krishna\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: ad58a7bb-7394-4a4e-a9ff-a4921888baa8
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -86,8 +72,8 @@ Session ID: e465cf05453e6cfa5f6329469811148c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy20.getText(Unknown Source)
-	at pages.HomePage.validate_login(HomePage.java:65)
+	at com.sun.proxy.$Proxy24.getText(Unknown Source)
+	at pages.HomePage.validate_login(HomePage.java:68)
 	at test.TC002_LoginPage.loginTest(TC002_LoginPage.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -119,22 +105,22 @@ Session ID: e465cf05453e6cfa5f6329469811148c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC002_LoginPage@737996a0]" name="closebrowser" is-config="true" duration-ms="891" started-at="2024-12-12T22:20:22Z" finished-at="2024-12-12T22:20:23Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC002_LoginPage@69d9c55]" name="closebrowser" is-config="true" duration-ms="1136" started-at="2024-12-15T20:39:02Z" finished-at="2024-12-15T20:39:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC002_LoginPage@737996a0]" name="launchAndLoadURL" is-config="true" duration-ms="7268" started-at="2024-12-12T22:20:23Z" finished-at="2024-12-12T22:20:30Z">
+        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC002_LoginPage@69d9c55]" name="launchAndLoadURL" is-config="true" duration-ms="8844" started-at="2024-12-15T20:39:03Z" finished-at="2024-12-15T20:39:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[FirefoxDriver]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAndLoadURL -->
-        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:test.TC002_LoginPage@737996a0]" name="loginTest" duration-ms="6472" started-at="2024-12-12T22:20:30Z" data-provider="readData" finished-at="2024-12-12T22:20:37Z">
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:test.TC002_LoginPage@69d9c55]" name="loginTest" duration-ms="6400" started-at="2024-12-15T20:39:12Z" data-provider="readData" finished-at="2024-12-15T20:39:19Z">
           <params>
             <param index="0">
               <value>
@@ -150,32 +136,172 @@ Session ID: e465cf05453e6cfa5f6329469811148c
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC002_LoginPage@737996a0]" name="closebrowser" is-config="true" duration-ms="1188" started-at="2024-12-12T22:20:37Z" finished-at="2024-12-12T22:20:38Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC002_LoginPage@69d9c55]" name="closebrowser" is-config="true" duration-ms="1022" started-at="2024-12-15T20:39:19Z" finished-at="2024-12-15T20:39:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method status="PASS" signature="Close()[pri:0, instance:test.TC002_LoginPage@737996a0]" name="Close" is-config="true" duration-ms="364" started-at="2024-12-12T22:20:54Z" finished-at="2024-12-12T22:20:55Z">
+      </class> <!-- test.TC002_LoginPage -->
+      <class name="test.TC001_SignUp">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.TC001_SignUp@7f560810]" name="setup" is-config="true" duration-ms="0" started-at="2024-12-15T20:38:13Z" finished-at="2024-12-15T20:38:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Close -->
-      </class> <!-- test.TC002_LoginPage -->
-      <class name="test.TC003_OneWayTrip">
-        <test-method status="PASS" signature="testDetails()[pri:0, instance:test.TC003_OneWayTrip@61dc03ce]" name="testDetails" is-config="true" duration-ms="2" started-at="2024-12-12T22:20:38Z" finished-at="2024-12-12T22:20:38Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.TC002_LoginPage@69d9c55]" name="setup" is-config="true" duration-ms="0" started-at="2024-12-15T20:38:13Z" finished-at="2024-12-15T20:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testDetails()[pri:0, instance:test.TC001_SignUp@7f560810]" name="testDetails" is-config="true" duration-ms="44" started-at="2024-12-15T20:38:13Z" finished-at="2024-12-15T20:38:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC003_OneWayTrip@61dc03ce]" name="launchAndLoadURL" is-config="true" duration-ms="7448" started-at="2024-12-12T22:20:38Z" finished-at="2024-12-12T22:20:45Z">
+        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC001_SignUp@7f560810]" name="launchAndLoadURL" is-config="true" duration-ms="14006" started-at="2024-12-15T20:38:14Z" finished-at="2024-12-15T20:38:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[FirefoxDriver]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchAndLoadURL -->
-        <test-method status="PASS" signature="oneWayTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.TC003_OneWayTrip@61dc03ce]" name="oneWayTest" duration-ms="7868" started-at="2024-12-12T22:20:45Z" data-provider="readData" finished-at="2024-12-12T22:20:53Z">
+        <test-method status="FAIL" signature="signUpTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.TC001_SignUp@7f560810]" name="signUpTest" duration-ms="2813" started-at="2024-12-15T20:38:28Z" data-provider="readData" finished-at="2024-12-15T20:38:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ram]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9999999999]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[testExample@example.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TestExample@123]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[TestExample@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <input id="defaultCheck1" class="form-check-input mt-02" type="checkbox"> is not clickable at point (83,555) because another element <div class="fade modal show"> obscures it
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [92ed7d01-c7e5-4488-a1d6-94b3a1849eff, clickElement {id=2f407cfe-d9ad-4db0-ae96-7c855761d511}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 32428, moz:profile: C:\Users\Krishna\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (92ed7d01-c7e5-4488-a1d6-94b3a1849eff)] -> xpath: //input[@id='defaultCheck1']]
+Session ID: 92ed7d01-c7e5-4488-a1d6-94b3a1849eff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <input id="defaultCheck1" class="form-check-input mt-02" type="checkbox"> is not clickable at point (83,555) because another element <div class="fade modal show"> obscures it
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [92ed7d01-c7e5-4488-a1d6-94b3a1849eff, clickElement {id=2f407cfe-d9ad-4db0-ae96-7c855761d511}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 133.0.3, moz:accessibilityChecks: false, moz:buildID: 20241209150345, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 32428, moz:profile: C:\Users\Krishna\AppData\Lo..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (92ed7d01-c7e5-4488-a1d6-94b3a1849eff)] -> xpath: //input[@id='defaultCheck1']]
+Session ID: 92ed7d01-c7e5-4488-a1d6-94b3a1849eff
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy24.click(Unknown Source)
+	at pages.SignUpPage.enter_termsCondition(SignUpPage.java:87)
+	at test.TC001_SignUp.signUpTest(TC001_SignUp.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTest -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC001_SignUp@7f560810]" name="closebrowser" is-config="true" duration-ms="1016" started-at="2024-12-15T20:38:31Z" finished-at="2024-12-15T20:38:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- test.TC001_SignUp -->
+    </test> <!-- SignUp and login -->
+    <test name="One way Trip" duration-ms="38705" started-at="2024-12-15T15:09:20Z" finished-at="2024-12-15T15:09:58Z">
+      <class name="test.TC003_OneWayTrip">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.TC003_OneWayTrip@3c756e4d]" name="setup" is-config="true" duration-ms="1" started-at="2024-12-15T20:39:20Z" finished-at="2024-12-15T20:39:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testDetails()[pri:0, instance:test.TC003_OneWayTrip@3c756e4d]" name="testDetails" is-config="true" duration-ms="3" started-at="2024-12-15T20:39:20Z" finished-at="2024-12-15T20:39:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC003_OneWayTrip@3c756e4d]" name="launchAndLoadURL" is-config="true" duration-ms="8776" started-at="2024-12-15T20:39:20Z" finished-at="2024-12-15T20:39:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incognito-Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAndLoadURL -->
+        <test-method status="PASS" signature="oneWayTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.TC003_OneWayTrip@3c756e4d]" name="oneWayTest" duration-ms="29077" started-at="2024-12-15T20:39:28Z" data-provider="readData" finished-at="2024-12-15T20:39:57Z">
           <params>
             <param index="0">
               <value>
@@ -189,28 +315,209 @@ Session ID: e465cf05453e6cfa5f6329469811148c
             </param>
             <param index="2">
               <value>
-                <![CDATA[test]]>
+                <![CDATA[9967795789]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[example]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[9876543456]]>
+                <![CDATA[TestExample@1234]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneWayTest -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC003_OneWayTrip@61dc03ce]" name="closebrowser" is-config="true" duration-ms="852" started-at="2024-12-12T22:20:53Z" finished-at="2024-12-12T22:20:54Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC003_OneWayTrip@3c756e4d]" name="closebrowser" is-config="true" duration-ms="797" started-at="2024-12-15T20:39:57Z" finished-at="2024-12-15T20:39:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
       </class> <!-- test.TC003_OneWayTrip -->
-    </test> <!-- Chrome Test -->
+    </test> <!-- One way Trip -->
+    <test name="Round Trip" duration-ms="42817" started-at="2024-12-15T15:09:58Z" finished-at="2024-12-15T15:10:41Z">
+      <class name="test.TC007_RoundTrip">
+        <test-method status="PASS" signature="testDetails()[pri:0, instance:test.TC007_RoundTrip@7ac7a4e4]" name="testDetails" is-config="true" duration-ms="1" started-at="2024-12-15T20:39:58Z" finished-at="2024-12-15T20:39:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.TC007_RoundTrip@7ac7a4e4]" name="setup" is-config="true" duration-ms="0" started-at="2024-12-15T20:39:58Z" finished-at="2024-12-15T20:39:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC007_RoundTrip@7ac7a4e4]" name="launchAndLoadURL" is-config="true" duration-ms="6611" started-at="2024-12-15T20:39:58Z" finished-at="2024-12-15T20:40:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAndLoadURL -->
+        <test-method status="PASS" signature="roundTripTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.TC007_RoundTrip@7ac7a4e4]" name="roundTripTest" duration-ms="35329" started-at="2024-12-15T20:40:05Z" data-provider="readData" finished-at="2024-12-15T20:40:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DEL]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9967795789]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TestExample@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roundTripTest -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC007_RoundTrip@7ac7a4e4]" name="closebrowser" is-config="true" duration-ms="799" started-at="2024-12-15T20:40:40Z" finished-at="2024-12-15T20:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- test.TC007_RoundTrip -->
+    </test> <!-- Round Trip -->
+    <test name="Other modules" duration-ms="43044" started-at="2024-12-15T15:10:41Z" finished-at="2024-12-15T15:11:24Z">
+      <class name="test.TC006_ManageBooking">
+        <test-method status="PASS" signature="testDetails()[pri:0, instance:test.TC006_ManageBooking@6cc4c815]" name="testDetails" is-config="true" duration-ms="1" started-at="2024-12-15T20:41:06Z" finished-at="2024-12-15T20:41:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC006_ManageBooking@6cc4c815]" name="launchAndLoadURL" is-config="true" duration-ms="13990" started-at="2024-12-15T20:41:06Z" finished-at="2024-12-15T20:41:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAndLoadURL -->
+        <test-method status="PASS" signature="manageBooking(java.lang.String, java.lang.String)[pri:0, instance:test.TC006_ManageBooking@6cc4c815]" name="manageBooking" duration-ms="2954" started-at="2024-12-15T20:41:20Z" data-provider="readData" finished-at="2024-12-15T20:41:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ram]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manageBooking -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC006_ManageBooking@6cc4c815]" name="closebrowser" is-config="true" duration-ms="867" started-at="2024-12-15T20:41:23Z" finished-at="2024-12-15T20:41:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- test.TC006_ManageBooking -->
+      <class name="test.TC005_FlightStatus">
+        <test-method status="PASS" signature="testDetails()[pri:0, instance:test.TC005_FlightStatus@56f4468b]" name="testDetails" is-config="true" duration-ms="1" started-at="2024-12-15T20:40:53Z" finished-at="2024-12-15T20:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC005_FlightStatus@56f4468b]" name="launchAndLoadURL" is-config="true" duration-ms="7464" started-at="2024-12-15T20:40:53Z" finished-at="2024-12-15T20:41:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAndLoadURL -->
+        <test-method status="PASS" signature="flightStatus(java.lang.String, java.lang.String)[pri:0, instance:test.TC005_FlightStatus@56f4468b]" name="flightStatus" duration-ms="4969" started-at="2024-12-15T20:41:00Z" data-provider="readData" finished-at="2024-12-15T20:41:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MAA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DEL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightStatus -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC005_FlightStatus@56f4468b]" name="closebrowser" is-config="true" duration-ms="828" started-at="2024-12-15T20:41:05Z" finished-at="2024-12-15T20:41:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- test.TC005_FlightStatus -->
+      <class name="test.TC004_CheckIn">
+        <test-method status="PASS" signature="reportInitialization()[pri:0, instance:test.TC004_CheckIn@5d5eef3d]" name="reportInitialization" is-config="true" duration-ms="209" started-at="2024-12-15T20:38:12Z" finished-at="2024-12-15T20:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportInitialization -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.TC006_ManageBooking@6cc4c815]" name="setup" is-config="true" duration-ms="0" started-at="2024-12-15T20:40:41Z" finished-at="2024-12-15T20:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.TC005_FlightStatus@56f4468b]" name="setup" is-config="true" duration-ms="0" started-at="2024-12-15T20:40:41Z" finished-at="2024-12-15T20:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.TC004_CheckIn@5d5eef3d]" name="setup" is-config="true" duration-ms="0" started-at="2024-12-15T20:40:41Z" finished-at="2024-12-15T20:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testDetails()[pri:0, instance:test.TC004_CheckIn@5d5eef3d]" name="testDetails" is-config="true" duration-ms="1" started-at="2024-12-15T20:40:41Z" finished-at="2024-12-15T20:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method status="PASS" signature="launchAndLoadURL(java.lang.String)[pri:0, instance:test.TC004_CheckIn@5d5eef3d]" name="launchAndLoadURL" is-config="true" duration-ms="7745" started-at="2024-12-15T20:40:41Z" finished-at="2024-12-15T20:40:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAndLoadURL -->
+        <test-method status="PASS" signature="checkIN(java.lang.String, java.lang.String)[pri:0, instance:test.TC004_CheckIn@5d5eef3d]" name="checkIN" duration-ms="3153" started-at="2024-12-15T20:40:49Z" data-provider="readData" finished-at="2024-12-15T20:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ram@exmaple.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkIN -->
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:test.TC004_CheckIn@5d5eef3d]" name="closebrowser" is-config="true" duration-ms="821" started-at="2024-12-15T20:40:52Z" finished-at="2024-12-15T20:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+        <test-method status="PASS" signature="Close()[pri:0, instance:test.TC004_CheckIn@5d5eef3d]" name="Close" is-config="true" duration-ms="636" started-at="2024-12-15T20:41:24Z" finished-at="2024-12-15T20:41:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- test.TC004_CheckIn -->
+    </test> <!-- Other modules -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -40,15 +40,15 @@ public class ManageBookingPage extends ProjectSpecifiedMethod {
 	}
 	//need to use explict wait 
 	public ManageBookingPage enter_searchBooking() throws IOException, InterruptedException {
-		takeScreenShot("6.ManageBooking");
 		srBook.click();
 		visibilityOfElement(invalidText);
 		return this;
 	}
 
-	public void validate_FlightStatus() throws InterruptedException {
+	public void validate_FlightStatus() throws InterruptedException, IOException {
 		String expected = "Invalid PNR or Ticket Number";
 		String actual = invalidText.getText();
+		takeScreenShot("6.ManageBooking");
 		Assert.assertEquals(actual, expected);
 	}
 

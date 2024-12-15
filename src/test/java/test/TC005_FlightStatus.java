@@ -15,7 +15,7 @@ public class TC005_FlightStatus extends ProjectSpecifiedMethod{
 	public void setup() throws IOException {
 		testName="FlightStatus";
 		testDescription="Testing the FlightStatus functionality";
-		testAuthor="Ramakrishnan";
+		testAuthor="Krishna";
 		testCategory="Smoke Testing";
 		
 		sheetName="FlightStatusTestData";

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
@@ -12,6 +13,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFShape;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -39,11 +42,11 @@ public class UtilityClass {
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
-		} else if (browser.equalsIgnoreCase("headless-Chrome")) {
+		} else if (browser.equalsIgnoreCase("incognito-Chrome")) {
 			ChromeOptions option = new ChromeOptions();
-			option.addArguments("--headless");
+			option.addArguments("−−incognito");
 			driver = new ChromeDriver(option);
-		}else 
+		} else
 			driver = new FirefoxDriver();
 		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
@@ -53,9 +56,11 @@ public class UtilityClass {
 	public void browser_Close() {
 		driver.quit();
 	}
-	public void Screenshot(WebDriver driver){
-	    this.driver = driver;
+
+	public void Screenshot(WebDriver driver) {
+		this.driver = driver;
 	}
+
 	public static String takeScreenShot(String name) throws IOException {
 
 		String path = "C:\\Automation\\SpicyJetSample\\Snap\\" + name + ".png";
@@ -94,5 +99,10 @@ public class UtilityClass {
 		}
 		book.close();
 		return data;
+	}
+
+	public void scrollDown(WebElement find) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView()", find);
 	}
 }

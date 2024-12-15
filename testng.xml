@@ -4,31 +4,31 @@
 	<listeners>
 		<listener class-name="utils.ListnerClass"></listener>
 	</listeners>
-
-<test name="headless-Chrome">
- <parameter name="browser" value="chrome"></parameter>
+	<test name="SignUp and login">
+	<parameter name="browser" value="FirefoxDriver"></parameter>
 		<classes>
 			<class name="test.TC001_SignUp" />
 			<class name="test.TC002_LoginPage" />
 		</classes>
 	</test>
-
-
-	<test name="Edge Test">
-	 <parameter name="browser" value="edge"></parameter>
+	<test name="One way Trip">
+		<parameter name="browser" value="incognito-Chrome"></parameter>
+		<classes>
+			<class name="test.TC003_OneWayTrip" />
+		</classes>
+	</test>
+	<test name="Round Trip">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="test.TC007_RoundTrip" />
+		</classes>
+	</test>
+		<test name="Other modules">
+		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="test.TC004_CheckIn" />
 			<class name="test.TC005_FlightStatus" />
 			<class name="test.TC006_ManageBooking" />
 		</classes>
 	</test>
-
-<test name="Chrome Test">
-	<parameter name="browser" value="chrome"></parameter>
-		<classes>
-			<class name="test.TC002_LoginPage" />
-			<class name="test.TC003_OneWayTrip" />
-		</classes>
-	</test>
-	
-</suite> <!-- Suite -->
+</suite> 

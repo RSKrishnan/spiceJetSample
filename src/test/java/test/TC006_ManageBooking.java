@@ -12,12 +12,10 @@ public class TC006_ManageBooking extends ProjectSpecifiedMethod {
 
 	@BeforeTest
 	public void setup() throws IOException {
-	//	browserLaunch();		
 		testName="ManageBooking";
 		testDescription="Testing the ManageBooking functionality";
 		testAuthor="Ramakrishnan";
 		testCategory="Smoke Testing";
-		
 		sheetName="ManageBookingTestData";
 	}
 	
@@ -27,6 +25,7 @@ public class TC006_ManageBooking extends ProjectSpecifiedMethod {
 		obj.click_manageBooking()
 		.enter_ticketNum(ticket)
 		.enter_lastNa(lastName)
-		.enter_searchBooking();
+		.enter_searchBooking()
+		.validate_FlightStatus();
 	}
 }

@@ -15,8 +15,8 @@ public class TC002_LoginPage extends ProjectSpecifiedMethod {
 		
 		testName="LoginTest";
 		testDescription="Testing the login functionality with positive and negative cases";
-		testAuthor="Ramakrishnan";
-		testCategory="Regression Testing";
+		testAuthor="Krishna";
+		testCategory="Smoke Testing";
 		sheetName="LoginTestData";
 	}
 	
